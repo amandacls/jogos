@@ -1,0 +1,13 @@
+{
+    "builds": [
+      {
+        "src": "artista-impostor/package.json",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "artista-impostor/build" }
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "artista-impostor/$1" }
+    ]
+  }
+  
